@@ -8,6 +8,7 @@ public class JsonParseApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JsonParseApplication.class, args);
+		System.out.println("Application started");
 	}
 
 }
