@@ -1,4 +1,4 @@
-package com.json.test.model;
+package com.json.parse.model;
 
 import javax.annotation.Generated;
 import javax.persistence.Column;
@@ -11,16 +11,8 @@ import javax.persistence.Table;
 
 
 @Entity
-//@SequenceGenerator(name="order_details", initialValue=1, allocationSize=100)
 @Table(name="order_details")
 public class OrderDetails {
-
-	
-	/*
-	 * @Id
-	 * 
-	 * @GeneratedValue private Long id;
-	 */
 	
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;

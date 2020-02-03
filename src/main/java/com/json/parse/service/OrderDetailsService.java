@@ -1,6 +1,6 @@
-package com.json.test.service;
+package com.json.parse.service;
 
-import com.json.test.model.OrderDetails;
+import com.json.parse.model.OrderDetails;
 
 public interface OrderDetailsService {
 	

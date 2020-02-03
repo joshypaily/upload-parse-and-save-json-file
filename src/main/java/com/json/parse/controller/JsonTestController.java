@@ -1,4 +1,4 @@
-package com.json.test.controller;
+package com.json.parse.controller;
 
 import java.io.IOException;
 import java.util.Date;
@@ -8,16 +8,17 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
-import com.json.test.model.Order;
-import com.json.test.model.OrderDetails;
-import com.json.test.service.OrderDetailsService;
-import com.json.test.service.OrderService;
+import com.json.parse.model.Order;
+import com.json.parse.model.OrderDetails;
+import com.json.parse.service.OrderDetailsService;
+import com.json.parse.service.OrderService;
 
 @Controller
 public class JsonTestController {
@@ -35,7 +36,7 @@ public class JsonTestController {
 	}
 
 	@SuppressWarnings("unchecked")
-	@RequestMapping("/upload")
+	@RequestMapping(value="/upload")
 	public ResponseEntity<String> upload(MultipartHttpServletRequest request, String modifiedBy) throws IOException {
 
 
@@ -88,7 +89,7 @@ public class JsonTestController {
             e.printStackTrace();
         }
         
-        return new ResponseEntity("success",HttpStatus.OK);
+        return new ResponseEntity("Successfully uploaded and saved data to database", HttpStatus.OK);
 	}
 	
 }

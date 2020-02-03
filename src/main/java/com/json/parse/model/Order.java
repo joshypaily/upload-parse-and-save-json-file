@@ -1,4 +1,4 @@
-package com.json.test.model;
+package com.json.parse.model;
 
 import java.util.Date;
 

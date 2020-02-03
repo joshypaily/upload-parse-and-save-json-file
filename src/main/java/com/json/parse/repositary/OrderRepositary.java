@@ -1,12 +1,12 @@
-package com.json.test.repositary;
+package com.json.parse.repositary;
 
 
 import org.springframework.data.repository.Repository;
 import org.springframework.stereotype.Service;
 
-import com.json.test.model.Order;
-import com.json.test.model.OrderDetails;
-import com.json.test.service.OrderService;
+import com.json.parse.model.Order;
+import com.json.parse.model.OrderDetails;
+import com.json.parse.service.OrderService;
 
 @Service
 public interface OrderRepositary extends Repository<Order, Long>{

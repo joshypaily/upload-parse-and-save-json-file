@@ -20,9 +20,11 @@ $(document).ready(function () {
     		processData : false,
     		success : function(data) {
     			  $("#result").html(data);
+    			  console.log(data);
     		},
     		error : function(xhr, error) {
     			 $("#result").html(e.responseText);
+    			 console.log(data);
     		}
 
     	});

@@ -15,8 +15,6 @@
 <div class="container">
             
   <h1>Upload json file</h1>
-
-<form method="POST" enctype="multipart/form-data" id="fileUploadForm">
     
     <div class="box">
 		<input type="file" 
@@ -25,10 +23,9 @@
 			data-multiple-caption="{count} files selected" multiple /> 
 		</div>
 	<br>					
-    <input type="submit" value="Submit" id="btnSubmit"/>
+    <input type="button" value="Submit" id="btnSubmit"/>
     <br>
     <p id="result"></p>
-</form>
 
 
 
